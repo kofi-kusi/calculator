@@ -1,0 +1,42 @@
+body{
+    
+}
+.display{
+    color: white;
+    text-align: left;
+    width: 100%;
+    height: 150px;
+    font-size: 5rem;
+    background-color: rgb(51, 49, 49);
+    border: none;
+}
+
+.calculator-container{
+    background-color: rgb(29, 28, 28);
+    height: 100vh;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.btns{
+    padding: 30px;
+}
+.btn-row{ 
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.btn{
+    font-weight: bold;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(62, 60, 60);
+    color: white;
+    font-size: 3rem;
+    margin: 0 10px;
+    cursor: pointer;
+}
