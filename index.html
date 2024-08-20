@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link href="./styles.css" rel="stylesheet">
-    <scrip src="./script.js" defer></scrip>
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="calculator-container">
@@ -15,7 +15,7 @@
                 <button class="btn number" onclick= "appendToDisplay('7')">7</button>
                 <button class="btn number" onclick= "appendToDisplay('8')">8</button>
                 <button class="btn number" onclick= "appendToDisplay('9')">9</button>
-                <button class="btn opt" onclick= "appendToDisplay('+')">&#215;</button>
+                <button class="btn opt" onclick= "appendToDisplay('+')">&plus;</button>
             </div>
             <div class="btn-row">
                 <button class="btn number" onclick= "appendToDisplay('4')">4</button>
@@ -25,14 +25,14 @@
             </div>
             <div class="btn-row">
                 <button class="btn number" onclick= "appendToDisplay('1')">1</button>
-                <button class="btn number" onclick= "appendToDisplay('')">2</button>
+                <button class="btn number" onclick= "appendToDisplay('2')">2</button>
                 <button class="btn number" onclick= "appendToDisplay('3')">3</button>
                 <button class="btn opt" onclick= "appendToDisplay('-')">&#8722;</button>
             </div>
             <div class="btn-row">
-                <button class="btn number">0</button>
-                <button class="btn number">.</button>
-                <button class="btn opt" onclick="calculate()">&equals;</button>
+                <button class="btn number" onclick= "appendToDisplay('0')">0</button>
+                <button class="btn number" onclick= "appendToDisplay('.')">.</button>
+                <button class="btn opt" id="eval" onclick="operate(operators, num1, num2)">&equals;</button>
                 <button class="btn opt" onclick= "appendToDisplay('/')">&#247;</button>  
             </div>
             <div class="btn-row">
